@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  border: solid 2px #000;
+  margin: 50px 200px;
+}
+
+form {
+  padding: 20px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+p {
+  font-size: 30px;
+}
+
+.current-icon {
+  font-size: 50px;
+  text-align: left;
+}
+
+.current-temp {
+  text-align: right;
+}
+
+.icons {
+  font-size: 30px;
+}
