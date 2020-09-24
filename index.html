@@ -9,6 +9,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/61028162aa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <input type="search" id="search-form-value" placeholder="Seach">
         <input type="submit" placeholder="Submit">
     </form>
-    <h1>
+    <h1 id="city-name">
         Austin
     </h1>
     <div class="row">
@@ -28,12 +29,10 @@
     <p>
 
     <p>
-        95°
-        <span class="current-icon">
-            <i class="fas fa-sun"></i>
-        </span>
+        <span class="temperature" id="temperature">95</span>°F
+
     </p>
-    <a href="#" id="fahrenheit">F</a> | <a href="#" id="celsius">C</a>
+
 
 
     </p>
@@ -60,9 +59,9 @@
         <div class="col">96°F</div>
     </div>
     </p>
-
+    <a href="#">Open-source Code</a> by Kaitlyn Herring
     </div>
-    <a href="https://github.com/kait9110/my-weather-app-project.git">Open-sourse Code</a> by Kaitlyn Herring
+
     <script src="src/index.js"></script>
 </body>
 
