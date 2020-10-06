@@ -1,7 +1,5 @@
-body.container {
+body {
   text-align: center;
-  border: solid 2px #000;
-  margin: 50px 200px;
 }
 
 form {
@@ -16,6 +14,12 @@ h1 {
 
 p {
   font-size: 30px;
+}
+
+.container {
+  text-align: center;
+  border: solid 2px #000;
+  margin: 50px 200px;
 }
 
 .current-icon {
