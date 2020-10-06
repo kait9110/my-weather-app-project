@@ -1,4 +1,5 @@
 body {
+  align: block;
   text-align: center;
   margin: 50px;
   max-width: 600;
