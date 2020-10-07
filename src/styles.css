@@ -30,3 +30,7 @@ p {
 .icons {
   font-size: 30px;
 }
+
+.weather-description {
+  text-align: right;
+}
