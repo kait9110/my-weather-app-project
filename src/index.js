@@ -18,11 +18,12 @@ let day = days[now.getDay()];
 currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 
 function displayWeather(response) {
-  console.log(response.data);
+  let iconImage = document.querySelector("icon").innerHTML;
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  iconImage.setAttribute("src", `https://openweathermap.org/img/wn/04d@2x.png`);
 }
 
 function newCityName(event) {
