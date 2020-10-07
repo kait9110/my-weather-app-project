@@ -18,12 +18,14 @@ let day = days[now.getDay()];
 currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 
 function displayWeather(response) {
-  console.log(response.data.wind.speed);
+  console.log(response.data);
   let iconImage = document.querySelector("#icon");
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#city-name").innerHTML = response.data.name;
+  document.querySelector("").innerHTML = document.querySelector(
+    "#city-name"
+  ).innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
