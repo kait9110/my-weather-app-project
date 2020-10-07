@@ -24,7 +24,10 @@ function displayWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  iconImage.setAttribute("src", `https://openweathermap.org/img/wn/04d@2x.png`);
+  iconImage.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function newCityName(event) {
