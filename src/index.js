@@ -27,6 +27,7 @@ function displayWeather(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector("humidity").innerHTML = response.data.main.humidity;
   iconImage.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
