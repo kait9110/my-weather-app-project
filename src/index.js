@@ -20,12 +20,13 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 function displayWeather(response) {
   console.log(response.data.wind.speed);
   let iconImage = document.querySelector("#icon");
-  let windElement = document.querySelector("#wind-speed");
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  windElement.innerHTML = Math.round(response.data.wind.speed);
 
   iconImage.setAttribute(
     "src",
