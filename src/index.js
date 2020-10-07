@@ -23,9 +23,9 @@ function displayWeather(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#humidity").innerHTML = document.querySelector(response.data.weather.humdity);
-    "#city-name"
-  ).innerHTML = response.data.name;
+  document.querySelector("#humidity").innerHTML =
+    response.data.weather.humidity;
+  document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
