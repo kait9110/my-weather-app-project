@@ -20,6 +20,7 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 function displayWeather(response) {
   console.log(response.data);
   let iconImage = document.querySelector("#icon");
+  let windElement = document.querySelector("#wind");
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -28,6 +29,7 @@ function displayWeather(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function newCityName(event) {
