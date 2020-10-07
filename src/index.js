@@ -20,7 +20,7 @@ currentDate.innerHTML = `${day} ${hours}:${minutes}`;
 function displayWeather(response) {
   console.log(response.data);
   let iconImage = document.querySelector("#icon");
-  let humidElement = document.querySelector("humidity");
+  let humidElement = document.querySelector("#humidity");
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
