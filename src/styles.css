@@ -1,9 +1,7 @@
 body {
-  align: block;
   text-align: center;
-  margin: 0 auto;
-  max-width: 300;
-  padding: 20;
+  border: solid 2px #000;
+  margin: 50px 200px;
 }
 
 form {
@@ -18,11 +16,6 @@ h1 {
 
 p {
   font-size: 30px;
-}
-
-.container {
-  border: solid 2px #000;
-  margin: 50px 200px;
 }
 
 .current-icon {
