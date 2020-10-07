@@ -23,7 +23,7 @@ function displayWeather(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("").innerHTML = document.querySelector(
+  document.querySelector("#humidity").innerHTML = document.querySelector(response.data.weather.humdity);
     "#city-name"
   ).innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
