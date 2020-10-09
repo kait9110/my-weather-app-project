@@ -28,6 +28,10 @@ small {
   margin: 0 auto;
 }
 
+.weather-description-name {
+  color: blue;
+}
+
 .current-icon {
   font-size: 50px;
   text-align: left;
@@ -43,8 +47,4 @@ small {
 
 .humidity {
   text-align: center;
-}
-
-.weather-description-name {
-  color: blue;
 }
