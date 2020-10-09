@@ -41,10 +41,6 @@ small {
   font-size: 30px;
 }
 
-.weather-description {
-  text-align: right;
-}
-
 .humidity {
   text-align: center;
 }
