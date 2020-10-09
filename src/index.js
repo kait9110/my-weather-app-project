@@ -21,6 +21,7 @@ function displayWeather(response) {
   console.log(response.data);
   let iconImage = document.querySelector("#icon");
   let humidElement = document.querySelector("#humidity");
+  let descriptionElement = document.querySelector("#description");
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -29,6 +30,7 @@ function displayWeather(response) {
     response.data.wind.speed
   );
   humidElement.innerHTML = Math.round(response.data.main.humidity);
+  desscriptionElement.innerHTML = response.data.weather[0].description;
   iconImage.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
