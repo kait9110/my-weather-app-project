@@ -21,7 +21,7 @@ function displayWeather(response) {
   console.log(response.data);
   let iconImage = document.querySelector("#icon");
   let humidElement = document.querySelector("#humidity");
-  let descriptionElement = document.querySelector("#description");
+  let descriptionElement = document.querySelector("#weather-description-name");
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
