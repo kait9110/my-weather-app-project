@@ -1,8 +1,11 @@
-.container {
+.container-wrapper {
   max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
   text-align: center;
   border: solid 2px #000;
-  margin: 0 auto;
   padding: 20px;
 }
 
