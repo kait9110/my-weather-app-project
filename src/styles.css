@@ -48,6 +48,6 @@ small {
 .humidity {
   text-align: center;
 }
-.description {
+.weather-description-name {
   font-style: capitalize;
 }
