@@ -28,7 +28,7 @@ small {
   margin: 0 auto;
 }
 
-.weather-description-name::first-letter {
+.weather-description-name {
   text-transform: capitalize;
 }
 
