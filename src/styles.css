@@ -51,5 +51,5 @@ small {
 
 .description {
   text-align: center;
-  font-style: capitalize;
+  text-transform: capitalize;
 }
