@@ -49,7 +49,7 @@ small {
   text-align: center;
 }
 
-.description {
+.weather-description-name {
   text-align: center;
   text-transform: capitalize;
 }
