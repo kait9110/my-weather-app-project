@@ -28,8 +28,8 @@ small {
   margin: 0 auto;
 }
 
-.weather-description-name {
-  color: blue;
+.weather-description-name::first-letter {
+  text-transform: capitalize;
 }
 
 .current-icon {
