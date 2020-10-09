@@ -2,6 +2,7 @@ body {
   text-align: center;
   border: solid 2px #000;
   margin: 50px 200px;
+  max-width: 600;
 }
 
 form {
@@ -33,4 +34,8 @@ p {
 
 .weather-description {
   text-align: right;
+}
+
+.humidity {
+  text-align: center;
 }
